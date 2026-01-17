@@ -1,0 +1,15 @@
+﻿services:
+  - type: web
+    name: macfish-dotnet
+    runtime: dotnet
+    repo: https://github.com/brooklyn-rgb/macfish.git
+    branch: main
+    plan: free
+    buildCommand: dotnet publish -c Release -o output
+    startCommand: dotnet output/macfish.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+    regions:
+      - oregon
+    autoDeploy: true

@@ -1,0 +1,17 @@
+﻿services:
+  - type: web
+    name: macfish-digital-solutions
+    runtime: docker
+    repo: https://github.com/brooklyn-rgb/macfish.git
+    branch: main
+    plan: free
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+    regions:
+      - oregon
+    buildCommand: ""
+    startCommand: ""
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
