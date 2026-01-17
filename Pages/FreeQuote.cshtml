@@ -1,0 +1,352 @@
+﻿@page
+@model FreeQuoteModel
+@{
+    ViewData["Title"] = "Free Quote - Macfish Digital Solutions";
+}
+
+<!-- Hero Section -->
+<section class="hero-section position-relative bg-gradient-primary">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+    <div class="container position-relative z-1 py-5">
+        <div class="row align-items-center min-vh-50">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <h1 class="display-3 fw-bold mb-4">Get Your Free Quote</h1>
+                <p class="lead mb-5">
+                    Tell us about your project and we'll provide a detailed, no-obligation quote
+                    within 24 hours.
+                </p>
+                <a href="#quoteForm" class="btn btn-warning btn-lg px-5">
+                    <i class="fas fa-arrow-down me-2"></i>Start Your Quote
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Form Section -->
+<section id="quoteForm" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-5">
+                            <h2 class="display-5 fw-bold mb-3">Project Information</h2>
+                            <p class="lead text-muted">Fill in the details below to get started</p>
+                        </div>
+
+                        <form id="quoteFormDetails">
+                            <!-- Step 1: Basic Information -->
+                            <div class="mb-5">
+                                <h3 class="h4 fw-bold mb-4 border-bottom pb-3">
+                                    <span class="badge bg-primary me-2">1</span> Contact Information
+                                </h3>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+                                            <label for="fullName">Full Name *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="company" placeholder="Company Name">
+                                            <label for="company">Company Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="quoteEmail" placeholder="Email Address" required>
+                                            <label for="quoteEmail">Email Address *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required>
+                                            <label for="phone">Phone Number *</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="url" class="form-control" id="website" placeholder="Website">
+                                            <label for="website">Website (if any)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Project Details -->
+                            <div class="mb-5">
+                                <h3 class="h4 fw-bold mb-4 border-bottom pb-3">
+                                    <span class="badge bg-primary me-2">2</span> Project Details
+                                </h3>
+
+                                <!-- Project Type -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold mb-3">What type of project are you planning? *</label>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <div class="form-check card-check">
+                                                <input class="form-check-input" type="radio" name="projectType" id="mobileApp" value="mobile" required>
+                                                <label class="form-check-label card border p-3 h-100" for="mobileApp">
+                                                    <i class="fas fa-mobile-alt fs-1 text-primary mb-3"></i>
+                                                    <div class="fw-bold">Mobile App</div>
+                                                    <small class="text-muted">iOS & Android application</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-check card-check">
+                                                <input class="form-check-input" type="radio" name="projectType" id="webApp" value="web" required>
+                                                <label class="form-check-label card border p-3 h-100" for="webApp">
+                                                    <i class="fas fa-globe fs-1 text-primary mb-3"></i>
+                                                    <div class="fw-bold">Web Application</div>
+                                                    <small class="text-muted">Responsive web platform</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-check card-check">
+                                                <input class="form-check-input" type="radio" name="projectType" id="aiSolution" value="ai" required>
+                                                <label class="form-check-label card border p-3 h-100" for="aiSolution">
+                                                    <i class="fas fa-robot fs-1 text-primary mb-3"></i>
+                                                    <div class="fw-bold">AI Solution</div>
+                                                    <small class="text-muted">Machine learning & AI</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Features -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold mb-3">What features do you need? (Select all that apply)</label>
+                                    <div class="row g-3">
+                                        @{
+                                            var features = new[]
+                                            {
+                                                                                new { id = "feature1", label = "User Authentication", icon = "fas fa-user-lock" },
+                                                                                new { id = "feature2", label = "Payment Processing", icon = "fas fa-credit-card" },
+                                                                                new { id = "feature3", label = "Social Features", icon = "fas fa-users" },
+                                                                                new { id = "feature4", label = "Real-time Chat", icon = "fas fa-comments" },
+                                                                                new { id = "feature5", label = "E-commerce", icon = "fas fa-shopping-cart" },
+                                                                                new { id = "feature6", label = "Admin Dashboard", icon = "fas fa-chart-line" },
+                                                                                new { id = "feature7", label = "Push Notifications", icon = "fas fa-bell" },
+                                                                                new { id = "feature8", label = "AI Integration", icon = "fas fa-brain" },
+                                                                                new { id = "feature9", label = "GPS/Maps", icon = "fas fa-map-marker-alt" },
+                                                                                new { id = "feature10", label = "File Upload", icon = "fas fa-upload" }
+                                                                                };
+                                        }
+
+                                        @foreach (var feature in features)
+                                        {
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="@feature.id" value="@feature.label">
+                                                    <label class="form-check-label" for="@feature.id">
+                                                        <i class="@feature.icon me-2"></i>@feature.label
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+
+                                <!-- Timeline -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold mb-3">What is your desired timeline? *</label>
+                                    <select class="form-select form-select-lg" id="timeline" required>
+                                        <option value="">Select timeline</option>
+                                        <option value="1-3">1-3 months (Urgent)</option>
+                                        <option value="3-6">3-6 months (Standard)</option>
+                                        <option value="6-12">6-12 months (Flexible)</option>
+                                        <option value="12+">12+ months (Long-term)</option>
+                                    </select>
+                                </div>
+
+                                <!-- Budget -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold mb-3">What is your budget range? (ZAR) *</label>
+                                    <select class="form-select form-select-lg" id="budget" required>
+                                        <option value="">Select budget range</option>
+                                        <option value="20k-50k">R20,000 - R50,000</option>
+                                        <option value="50k-100k">R50,000 - R100,000</option>
+                                        <option value="100k-250k">R100,000 - R250,000</option>
+                                        <option value="250k-500k">R250,000 - R500,000</option>
+                                        <option value="500k+">R500,000+</option>
+                                        <option value="custom">Custom Quote Needed</option>
+                                    </select>
+                                </div>
+
+                                <!-- Description -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-bold mb-3">Project Description *</label>
+                                    <textarea class="form-control" id="description" rows="5" placeholder="Please describe your project in detail..." required></textarea>
+                                    <div class="form-text">Be as detailed as possible. Include goals, target audience, and any specific requirements.</div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Additional Information -->
+                            <div class="mb-5">
+                                <h3 class="h4 fw-bold mb-4 border-bottom pb-3">
+                                    <span class="badge bg-primary me-2">3</span> Additional Information
+                                </h3>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">Do you have designs or wireframes?</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="designs" id="designsYes" value="yes">
+                                                <label class="form-check-label" for="designsYes">Yes, we have designs</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="designs" id="designsNo" value="no" checked>
+                                                <label class="form-check-label" for="designsNo">No, we need design help</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">How did you hear about us?</label>
+                                            <select class="form-select" id="referral">
+                                                <option value="">Select option</option>
+                                                <option value="search">Search Engine</option>
+                                                <option value="social">Social Media</option>
+                                                <option value="referral">Referral</option>
+                                                <option value="ad">Advertisement</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label for="fileUpload" class="form-label fw-bold">Upload any relevant files (optional)</label>
+                                            <input class="form-control" type="file" id="fileUpload" multiple>
+                                            <div class="form-text">You can upload wireframes, designs, or documentation (max 10MB total)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="text-center">
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        I agree to the <a href="/terms" target="_blank">Terms of Service</a> and
+                                        <a href="/privacy" target="_blank">Privacy Policy</a>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg px-5">
+                                    <i class="fas fa-paper-plane me-2"></i>Submit Quote Request
+                                </button>
+
+                                <p class="text-muted mt-3">
+                                    We'll get back to you within 24 hours with a detailed quote.
+                                    <br>For urgent inquiries, call <a href="tel:+27662199118">+27 (0) 69 262 9422</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Quote CTA -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h3 class="fw-bold mb-3">Need a quick estimate?</h3>
+                <p class="mb-0">Check our <a href="/pricing" class="fw-bold">pricing page</a> for ballpark figures on common projects.</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <a href="/pricing" class="btn btn-outline-primary btn-lg">
+                    View Pricing <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .card-check .form-check-input {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .card-check .card {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding-left: 40px;
+    }
+
+        .card-check .card:hover {
+            border-color: #0d6efd;
+            transform: translateY(-5px);
+        }
+
+    .card-check .form-check-input:checked + .card {
+        border-color: #0d6efd;
+        background-color: rgba(13, 110, 253, 0.05);
+    }
+
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #1a237e 0%, #311b92 100%);
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const quoteForm = document.getElementById('quoteFormDetails');
+
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Basic validation
+            const requiredFields = quoteForm.querySelectorAll('[required]');
+            let isValid = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value) {
+                    isValid = false;
+                    field.classList.add('is-invalid');
+                } else {
+                    field.classList.remove('is-invalid');
+                }
+            });
+
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Here you would typically send the form data to your server
+            // For now, we'll show a success message
+            alert('Thank you for your quote request! We will get back to you within 24 hours with a detailed proposal.');
+            quoteForm.reset();
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Add smooth scrolling for the "Start Your Quote" button
+        document.querySelector('a[href="#quoteForm"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>

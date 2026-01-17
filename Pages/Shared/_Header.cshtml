@@ -1,0 +1,156 @@
+﻿<!-- Top Bar -->
+<div class="bg-dark text-white py-2">
+    <div class="container">
+        <!-- d-md-flex: side-by-side on desktop, stacked on mobile -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+
+            <!-- Hide tagline on small mobile screens to save space, or keep it centered -->
+            <span class="small text-center text-md-start opacity-75 d-none d-sm-inline">
+                Top <span class="text-primary fw-bold">FlutterFlow</span> Agency | AI Specialists
+            </span>
+
+            <!-- Contact Links -->
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 gap-md-3">
+                <a href="mailto:support@macfish.co.za" class="text-white text-decoration-none small d-flex align-items-center">
+                    <i class="fas fa-envelope me-2 text-primary"></i>
+                    <span class="d-none d-lg-inline">support@macfish.co.za</span>
+                    <span class="d-lg-none">Email</span> <!-- Shortened for medium screens -->
+                </a>
+
+                <span class="opacity-25 d-none d-sm-inline">|</span>
+
+                <a href="tel:+27692629422" class="text-white text-decoration-none small d-flex align-items-center">
+                    <i class="fas fa-phone me-2 text-primary"></i>
+                    010 023 4386 | +27 69 262 9422
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <div class="d-flex align-items-center">
+                <div class="text-primary fw-bold fs-3">MF</div>
+                <div class="d-flex flex-column ms-2">
+                    <span class="fw-bold fs-4 text-dark">Macfish</span>
+                    <small class="text-muted" style="font-size: 0.7rem; line-height: 1;">Digital Solutions</small>
+                    <small class="text-muted" style="font-size: 0.7rem; line-height: 1;">AI & App Development</small>
+                </div>
+            </div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <!-- In your _Header.cshtml -->
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu shadow-lg" aria-labelledby="servicesDropdown">
+                        <li><h6 class="dropdown-header text-primary fw-bold">Our Expertise</h6></li>
+                        <li>
+                            <a class="dropdown-item" href="/services/consulting">
+                                <i class="fas fa-lightbulb me-2 text-warning"></i>Consulting & Solution Design
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/services/design">
+                                <i class="fas fa-palette me-2 text-info"></i>UI/UX Design & Prototype
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/services/lowcode">
+                                <i class="fas fa-bolt me-2 text-success"></i>Low Code App Development
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/services/development">
+                                <i class="fas fa-code me-2 text-primary"></i>Hybrid & Native Development
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item fw-bold" href="/services">
+                                <i class="fas fa-cogs me-2 text-dark"></i>All Services
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pricing">Pricing</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/technologies">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/casestudies">Case Studies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <!-- Free Quote Button -->
+                <li class="nav-item ms-2">
+                    <a href="/freequote" class="btn btn-primary btn-lg px-4 fw-bold">
+                        <i class="fas fa-comment-dollar me-2"></i>Free Quote
+                        <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Simple CSS for Hover Effects -->
+<style>
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #0d6efd;
+            font-weight: 600;
+        }
+
+    .dropdown-menu {
+        border: none;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        min-width: 250px;
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+    }
+
+        .dropdown-item:hover {
+            background-color: rgba(13, 110, 253, 0.1);
+        }
+</style>

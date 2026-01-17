@@ -1,0 +1,459 @@
+﻿@page
+@model TechnologiesModel
+@{
+    ViewData["Title"] = "Technologies - Macfish Digital Solutions";
+}
+
+<!-- Hero Section -->
+<section class="hero-section position-relative bg-gradient-primary">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+    <div class="container position-relative z-1 py-5">
+        <div class="row align-items-center min-vh-50">
+            <div class="col-lg-8 mx-auto text-center text-white">
+                <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                    <span class="badge bg-primary">#Flutter</span>
+                    <span class="badge bg-info">#FlutterFlow</span>
+                    <span class="badge bg-success">#AWS</span>
+                    <span class="badge bg-warning">#Python</span>
+                    <span class="badge bg-danger">#OpenAI</span>
+                    <span class="badge bg-dark">#Shopify</span>
+                </div>
+                <h1 class="display-3 fw-bold mb-4">Technologies We Know and Love</h1>
+                <p class="lead mb-5">
+                    We've learned the hard way to be selective about the technologies we will work with.
+                    We are fully committed to AI and embrace low-code as long as we can also custom-code.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Philosophy -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h2 class="display-5 fw-bold mb-4">Our Technology Philosophy</h2>
+                <p class="lead mb-5">
+                    We are fully committed to AI. We embrace low-code as long as we can also custom-code
+                    and our clients can own the IP (which is why we love FlutterFlow and DreamFlow).
+                    The key is knowing the pros and cons of each approach and making an educated
+                    decision with our clients.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Stack -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="display-5 fw-bold mb-3">Our Technology Stack</h2>
+                <p class="lead text-muted">Comprehensive expertise across modern technologies</p>
+            </div>
+        </div>
+
+        <!-- Mobile Development -->
+        <div class="mb-5">
+            <h3 class="h3 fw-bold mb-4 border-bottom pb-3">
+                <i class="fas fa-mobile-alt text-primary me-3"></i>Mobile Development
+            </h3>
+            <div class="row g-4">
+                @{
+                    var mobileTech = new[]
+                    {
+                                new {
+                                name = "Flutter",
+                                icon = "fab fa-flutter",
+                                color = "bg-info",
+                                description = "Cross-platform framework from Google",
+                                pros = "Single codebase for iOS & Android, Fast development, Great performance"
+                                },
+                                new {
+                                name = "React Native",
+                                icon = "fab fa-react",
+                                color = "bg-primary",
+                                description = "Facebook's cross-platform framework",
+                                pros = "Large ecosystem, JavaScript based, Hot reload"
+                                },
+                                new {
+                                name = "iOS Native",
+                                icon = "fab fa-apple",
+                                color = "bg-dark",
+                                description = "Swift & Objective-C",
+                                pros = "Best performance, Access to latest iOS features"
+                                },
+                                new {
+                                name = "Android Native",
+                                icon = "fab fa-android",
+                                color = "bg-success",
+                                description = "Kotlin & Java",
+                                pros = "Optimized for Android, Full hardware access"
+                                }
+                                };
+                }
+
+                @foreach (var tech in mobileTech)
+                {
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="@tech.color text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                     style="width: 80px; height: 80px;">
+                                    <i class="@tech.icon fs-3"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">@tech.name</h4>
+                                <p class="text-muted small mb-4">@tech.description</p>
+                                <div class="text-start small">
+                                    <strong>Pros:</strong> @tech.pros
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Low-Code Platforms -->
+        <div class="mb-5">
+            <h3 class="h3 fw-bold mb-4 border-bottom pb-3">
+                <i class="fas fa-bolt text-warning me-3"></i>Low-Code Platforms
+            </h3>
+            <div class="row g-4">
+                @{
+                    var lowCodeTech = new[]
+                    {
+                                new {
+                                name = "FlutterFlow",
+                                icon = "fas fa-bolt",
+                                color = "bg-primary",
+                                description = "Visual app builder for Flutter",
+                                why = "Our preferred low-code platform, Export to full Flutter code"
+                                },
+                                new {
+                                name = "DreamFlow",
+                                icon = "fas fa-cloud",
+                                color = "bg-info",
+                                description = "AI-powered app development",
+                                why = "Excellent for rapid prototyping, AI-assisted development"
+                                },
+                                new {
+                                name = "Bubble",
+                                icon = "fas fa-bubble",
+                                color = "bg-warning",
+                                description = "Web app builder",
+                                why = "Great for web MVPs, No coding required"
+                                },
+                                new {
+                                name = "Adalo",
+                                icon = "fas fa-magic",
+                                color = "bg-success",
+                                description = "No-code app builder",
+                                why = "Quick prototyping, Visual database design"
+                                }
+                                };
+                }
+
+                @foreach (var tech in lowCodeTech)
+                {
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="@tech.color text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                     style="width: 80px; height: 80px;">
+                                    <i class="@tech.icon fs-3"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">@tech.name</h4>
+                                <p class="text-muted small mb-3">@tech.description</p>
+                                <div class="text-start small">
+                                    <strong>Why we use it:</strong> @tech.why
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="mb-5">
+            <h3 class="h3 fw-bold mb-4 border-bottom pb-3">
+                <i class="fas fa-robot text-success me-3"></i>AI & Machine Learning
+            </h3>
+            <div class="row g-4">
+                @{
+                    var aiTech = new[]
+                    {
+                                new {
+                                name = "OpenAI",
+                                icon = "fas fa-brain",
+                                color = "bg-success",
+                                description = "GPT models & API",
+                                use = "Chatbots, Content generation, Text analysis"
+                                },
+                                new {
+                                name = "TensorFlow",
+                                icon = "fas fa-project-diagram",
+                                color = "bg-warning",
+                                description = "Google's ML framework",
+                                use = "Custom ML models, Image recognition, Predictive analytics"
+                                },
+                                new {
+                                name = "PyTorch",
+                                icon = "fab fa-python",
+                                color = "bg-danger",
+                                description = "Facebook's ML library",
+                                use = "Research projects, Computer vision, NLP"
+                                },
+                                new {
+                                name = "LangChain",
+                                icon = "fas fa-link",
+                                color = "bg-info",
+                                description = "LLM application framework",
+                                use = "AI agents, Document analysis, Complex workflows"
+                                }
+                                };
+                }
+
+                @foreach (var tech in aiTech)
+                {
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="@tech.color text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                     style="width: 80px; height: 80px;">
+                                    <i class="@tech.icon fs-3"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">@tech.name</h4>
+                                <p class="text-muted small mb-3">@tech.description</p>
+                                <div class="text-start small">
+                                    <strong>Common uses:</strong> @tech.use
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Backend & Cloud -->
+        <div class="mb-5">
+            <h3 class="h3 fw-bold mb-4 border-bottom pb-3">
+                <i class="fas fa-server text-primary me-3"></i>Backend & Cloud Services
+            </h3>
+            <div class="row g-4">
+                @{
+                    var backendTech = new[]
+                    {
+                                new {
+                                name = "AWS",
+                                icon = "fab fa-aws",
+                                color = "bg-warning",
+                                description = "Amazon Web Services",
+                                services = "EC2, S3, Lambda, RDS, Amplify"
+                                },
+                                new {
+                                name = "Firebase",
+                                icon = "fas fa-fire",
+                                color = "bg-danger",
+                                description = "Google's mobile platform",
+                                services = "Auth, Database, Hosting, Cloud Functions"
+                                },
+                                new {
+                                name = "Node.js",
+                                icon = "fab fa-node-js",
+                                color = "bg-success",
+                                description = "JavaScript runtime",
+                                services = "REST APIs, Real-time apps, Microservices"
+                                },
+                                new {
+                                name = "Python/Django",
+                                icon = "fab fa-python",
+                                color = "bg-info",
+                                description = "Python web framework",
+                                services = "Data processing, AI backends, Enterprise apps"
+                                }
+                                };
+                }
+
+                @foreach (var tech in backendTech)
+                {
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="@tech.color text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                     style="width: 80px; height: 80px;">
+                                    <i class="@tech.icon fs-3"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">@tech.name</h4>
+                                <p class="text-muted small mb-3">@tech.description</p>
+                                <div class="text-start small">
+                                    <strong>Services:</strong> @tech.services
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="mb-5">
+            <h3 class="h3 fw-bold mb-4 border-bottom pb-3">
+                <i class="fas fa-shopping-cart text-danger me-3"></i>E-commerce Platforms
+            </h3>
+            <div class="row g-4">
+                @{
+                    var ecomTech = new[]
+                    {
+                                new {
+                                name = "Shopify",
+                                icon = "fab fa-shopify",
+                                color = "bg-success",
+                                description = "Leading e-commerce platform",
+                                features = "Storefront, Payments, Inventory, Marketing"
+                                },
+                                new {
+                                name = "WooCommerce",
+                                icon = "fab fa-wordpress",
+                                color = "bg-primary",
+                                description = "WordPress e-commerce",
+                                features = "Customizable, Open source, WordPress integration"
+                                },
+                                new {
+                                name = "Custom E-commerce",
+                                icon = "fas fa-code",
+                                color = "bg-dark",
+                                description = "Custom-built solutions",
+                                features = "Full control, Scalable, Enterprise features"
+                                },
+                                new {
+                                name = "Payment Gateways",
+                                icon = "fas fa-credit-card",
+                                color = "bg-info",
+                                description = "Payment processing",
+                                features = "Payfast, Stripe, PayPal, Apple Pay"
+                                }
+                                };
+                }
+
+                @foreach (var tech in ecomTech)
+                {
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4 text-center">
+                                <div class="@tech.color text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                                     style="width: 80px; height: 80px;">
+                                    <i class="@tech.icon fs-3"></i>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">@tech.name</h4>
+                                <p class="text-muted small mb-3">@tech.description</p>
+                                <div class="text-start small">
+                                    <strong>Features:</strong> @tech.features
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Selection Guide -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h2 class="display-5 fw-bold mb-4 text-center">How We Choose Technologies</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex mb-4">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check-circle text-success fs-3"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5 fw-bold mb-2">Client Needs First</h4>
+                                        <p class="text-muted mb-0">
+                                            We start by understanding your specific requirements,
+                                            then recommend the best technology stack for your project.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="d-flex mb-4">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check-circle text-success fs-3"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5 fw-bold mb-2">Long-term Sustainability</h4>
+                                        <p class="text-muted mb-0">
+                                            We choose technologies that will be maintainable and
+                                            scalable for years to come.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="d-flex mb-4">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check-circle text-success fs-3"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5 fw-bold mb-2">Community & Support</h4>
+                                        <p class="text-muted mb-0">
+                                            We prefer technologies with strong communities, good
+                                            documentation, and active development.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="d-flex mb-4">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check-circle text-success fs-3"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h5 fw-bold mb-2">Performance & Cost</h4>
+                                        <p class="text-muted mb-0">
+                                            We balance performance requirements with development
+                                            and maintenance costs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <a href="/free-quote" class="btn btn-primary btn-lg px-5">
+                                Get Technology Recommendation <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Not Sure Which Technology to Choose?</h2>
+        <p class="lead mb-5">
+            Our experts will analyze your requirements and recommend the perfect technology stack for your project.
+        </p>
+        <a href="/contact" class="btn btn-warning btn-lg px-5">
+            <i class="fas fa-calendar-check me-2"></i>Schedule Tech Consultation
+        </a>
+    </div>
+</section>

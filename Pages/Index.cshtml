@@ -1,0 +1,690 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Macfish Digital Solutions - AI & App Development";
+}
+
+<!-- Hero Section -->
+<section class="hero-section position-relative overflow-hidden">
+    <!-- Background Carousel -->
+    <div class="hero-bg-carousel">
+        <div class="hero-bg" style="background-image:url('/images/banners/meeting.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/board.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/b.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/b.jpg');"></div>
+    </div>
+
+    <!-- Overlay to ensure text readability -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.6); z-index: 1;"></div>
+
+    <div class="container position-relative z-2 py-5" style="min-height: 85vh;">
+        <div class="row align-items-center min-vh-85">
+            <div class="col-lg-6 text-white">
+                <!-- Tags -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="badge bg-primary">#AI</span>
+                    <span class="badge bg-info">#LowCode</span>
+                    <span class="badge bg-success">#GlobalClients</span>
+                    <span class="badge bg-warning">#VibeCoding</span>
+                    <span class="badge bg-danger">#FlutterFlow</span>
+                </div>
+                <h1 class="display-3 fw-bold mb-4">We Design and Develop<br>Apps and AI Solutions</h1>
+                <p class="lead mb-5">
+                    We use our ten years of development experience, along with our design creativity, project management discipline and a passion for innovation, to build award winning solutions for our clients.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="/freequote" class="btn btn-primary btn-lg px-5 py-3 fw-bold">
+                        <i class="fas fa-comment-dollar me-2"></i>Get a Free Quote
+                    </a>
+                    <a href="/casestudies" class="btn btn-outline-light btn-lg px-5 py-3">
+                        View Our Work
+                    </a>
+                </div>
+            </div>
+
+            <!-- Stats Sidebar -->
+            <div class="col-lg-5 offset-lg-1">
+                <div class="card border-0 shadow-lg bg-white bg-opacity-10 text-white" style="backdrop-filter: blur(10px);">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <h3 class="fw-bold">120+ <span class="fs-6">Apps Built</span></h3>
+                        </div>
+                        <!-- Client Logos -->
+                        <div class="d-flex justify-content-center gap-4 mb-4">
+                            <div class="client-logo bg-white p-2 rounded text-dark text-center" style="width: 80px;">
+                                <i class="fas fa-book-open fa-2x text-primary"></i>
+                                <div class="small mt-1" style="font-size: 10px;">Random House</div>
+                            </div>
+                            <div class="client-logo bg-white p-2 rounded text-dark text-center" style="width: 80px;">
+                                <i class="fas fa-shuttle-van fa-2x text-success"></i>
+                                <div class="small mt-1" style="font-size: 10px;">Transnova</div>
+                            </div>
+                            <div class="client-logo bg-white p-2 rounded text-dark text-center" style="width: 80px;">
+                                <i class="fas fa-star fa-2x text-warning"></i>
+                                <div class="small mt-1" style="font-size: 10px;">Top Rated</div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="small mb-0">Rated 5/5 by clients worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Problem Solving Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                     alt="Team working on digital solutions" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <span class="badge bg-dark">#SolvingRealProblems</span>
+                    <span class="badge bg-info">#MVP</span>
+                    <span class="badge bg-primary">#DesignLed</span>
+                    <span class="badge bg-success">#Agile</span>
+                </div>
+                
+                <h2 class="display-5 fw-bold mb-4">Digital Solutions to Real World Problems</h2>
+                
+                <p class="lead mb-4">
+                    We are selective about the projects we work on because we know that if it's not going 
+                    to solve a problem, it will fail. We love the challenge of finding the right strategy, 
+                    technology stack, design, MVP and roadmap to match our client's budget.
+                </p>
+                
+                <p class="mb-5">
+                    This is why we enthusiastically embrace low code solutions (such as FlutterFlow and DreamFlow) 
+                    and AI, knowing that our DNA as software developers can address any custom or complex coding requirements.
+                </p>
+                
+                <a href="/about" class="btn btn-outline-primary btn-lg px-5">
+                    Learn More About Us <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                <span class="badge bg-primary">#UI/UX Design</span>
+                <span class="badge bg-info">#GenerativeAI</span>
+                <span class="badge bg-success">#Chatbots</span>
+                <span class="badge bg-warning">#VibeCoding</span>
+                <span class="badge bg-danger">#FlutterFlow</span>
+            </div>
+            <h2 class="display-5 fw-bold mb-3">Our Services</h2>
+            <p class="lead text-muted">Comprehensive digital solutions from concept to deployment</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-lightbulb fs-1 text-warning"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Consulting & Solution Design</h3>
+                        <p class="text-muted mb-0">Strategic planning and technical consultation for your digital projects.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-palette fs-1 text-info"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">UI/UX Design & Prototype</h3>
+                        <p class="text-muted mb-0">User-centered design that creates engaging digital experiences.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-bolt fs-1 text-success"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Low Code App Development</h3>
+                        <p class="text-muted mb-0">Rapid development using FlutterFlow and other low-code platforms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-code fs-1 text-primary"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Hybrid & Native Development</h3>
+                        <p class="text-muted mb-0">Custom mobile app development for iOS and Android platforms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 5 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-robot fs-1 text-success"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">AI Solutions</h3>
+                        <p class="text-muted mb-0">Custom AI and machine learning solutions using OpenAI and other platforms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 6 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-comment-dots fs-1 text-info"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Chatbots</h3>
+                        <p class="text-muted mb-0">Intelligent chatbot development for customer service and automation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 7 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-shopping-cart fs-1 text-warning"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">eCommerce</h3>
+                        <p class="text-muted mb-0">Shopify and custom eCommerce solutions for online businesses.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 8 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="mb-4">
+                            <i class="fas fa-server fs-1 text-danger"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Hosting & Maintenance</h3>
+                        <p class="text-muted mb-0">Reliable hosting and ongoing maintenance for your applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Technologies Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                <span class="badge bg-primary">#Flutter</span>
+                <span class="badge bg-info">#FlutterFlow</span>
+                <span class="badge bg-success">#AWS</span>
+                <span class="badge bg-warning">#Python</span>
+                <span class="badge bg-danger">#OpenAI</span>
+                <span class="badge bg-dark">#Shopify</span>
+            </div>
+            <h2 class="display-5 fw-bold mb-3">Technologies We Know and Love</h2>
+            <p class="lead text-muted">We've learned the hard way to be selective about the technologies we work with.</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <p class="text-center mb-5">
+                    We are fully committed to AI. We embrace low-code as long as we can also custom-code and 
+                    our clients can own the IP (which is why we love FlutterFlow and DreamFlow). The key is 
+                    knowing the pros and cons of each approach and making an educated decision with our clients.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Tech Logos -->
+        <div class="row g-4 justify-content-center">
+            @{
+                var techStack = new[]
+                {
+                        new { name = "Flutter", icon = "fas fa-globe", description = "UI toolkit for mobile/web" },
+                    new { name = "FlutterFlow", icon = "fas fa-bolt", description = "Low-code platform" },
+                    new { name = "Figma", icon = "fab fa-figma", description = "Design tool" },
+                    new { name = "OpenAI", icon = "fas fa-robot", description = "AI solutions" },
+                    new { name = "Shopify", icon = "fab fa-shopify", description = "eCommerce" },
+                    new { name = "AWS", icon = "fab fa-aws", description = "Cloud services" },
+                    new { name = "Python", icon = "fab fa-python", description = "Backend & AI" },
+                    new { name = "React", icon = "fab fa-react", description = "Web framework" },
+                 
+            new { name = "Nextjs", icon = "fas fa-globe", description = "Web framework" }
+                };
+            }
+            
+            @foreach (var tech in techStack)
+            {
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="card border-0 bg-white shadow-sm h-100 text-center p-3">
+                        <i class="@tech.icon fs-1 text-primary mb-3"></i>
+                        <h4 class="h6 fw-bold mb-1">@tech.name</h4>
+                        <p class="small text-muted mb-0">@tech.description</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                <span class="badge bg-primary">#ProblemSolvers</span>
+                <span class="badge bg-info">#FullStack</span>
+                <span class="badge bg-success">#Proactive</span>
+                <span class="badge bg-warning">#Passionate</span>
+            </div>
+            <h2 class="display-5 fw-bold mb-3">The Minds Behind Macfish Digital Solutions</h2>
+            <p class="lead text-muted">Experienced team delivering exceptional digital solutions</p>
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center mb-3 mb-md-0">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                     alt="Rob Maclean" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                                <h5 class="fw-bold mb-0">Rob Maclean</h5>
+                                <p class="text-muted small">CEO & Founder</p>
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="fw-bold mb-3">Experienced Business Leadership That Delivers</h4>
+                                <p class="mb-4">
+                                    Rob Maclean graduated with a Masters from Oxford University and spent 15 years 
+                                    in Financial Services before setting up Macfish. We have our own portfolio of 
+                                    successful apps, so we understand the importance of cost management, quality 
+                                    and meeting deadlines to our clients.
+                                </p>
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>Domain Expertise with Full Stack Flexibility</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-2"></i>
+                                    <span>Building long term relationships based on performance and trust</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-4">Why Choose Macfish?</h3>
+                
+                <div class="row g-3">
+                    <!-- Reason 1 -->
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-chart-line text-primary fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Experience</h5>
+                                <p class="small mb-0">120+ apps, 10+ years, 50+ clients, 5 continents</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reason 2 -->
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-award text-warning fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Reputation</h5>
+                                <p class="small mb-0">Award-winning solutions, top-rated agency</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reason 3 -->
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-badge-check text-success fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Credentials</h5>
+                                <p class="small mb-0">Official FlutterFlow Agency, Shopify & AWS Experts</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reason 4 -->
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-globe text-info fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Communication</h5>
+                                <p class="small mb-0">English speaking, convenient time zone, remote</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reason 5 -->
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-handshake text-primary fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">Integrity</h5>
+                                <p class="small mb-0">Building long-term, successful relationships</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reason 6 -->
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-smile text-warning fs-3"></i>
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="fw-bold">We're Nice People</h5>
+                                <p class="small mb-0">There's only one way to find this out!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <a href="/team" class="btn btn-primary">
+                        Meet Our Team <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
+                <span class="badge bg-primary">#HappyClients</span>
+            </div>
+            <h2 class="display-5 fw-bold mb-3">What Our Clients Say</h2>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-4">
+                            <i class="fas fa-quote-left fa-2x text-primary opacity-25"></i>
+                        </div>
+                        <p class="fs-5 text-center mb-4">
+                            "Macfish has consistently demonstrated a deep understanding of the project requirements, 
+                            innovative problem-solving, and a commitment to excellence."
+                        </p>
+                        <div class="text-center">
+                            <h5 class="fw-bold mb-1">Sibusiso Mbhele</h5>
+                            <p class="text-muted mb-2">Executive Director, Eyerus App</p>
+                            <p class="small text-muted">(Winner MTN App of the Year Award 2022 and 2023)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Case Studies Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <div>
+                <h2 class="display-5 fw-bold mb-2">Case Studies</h2>
+                <p class="lead text-muted mb-0">Our successful projects speak for themselves</p>
+            </div>
+            <a href="/case-studies" class="btn btn-outline-primary">
+                View All <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+            </a>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Case Study 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <span class="badge bg-info">Self-Improvement</span>
+                            <span class="text-muted small">January 8, 2024</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Dreamigos</h3>
+                        <p class="text-muted mb-4">
+                            Dreamigos is a dream interpretation, social media app. It allows people to 
+                            record their dreams in various media formats and engage on dreams with other 
+                            people and experts.
+                        </p>
+                        <a href="/case-studies/dreamigos" class="text-decoration-none">
+                            View More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <span class="badge bg-warning">Security Apps</span>
+                            <span class="text-muted small">March 5, 2023</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">Eyerus</h3>
+                        <p class="text-muted mb-4">
+                            The Eyerus app fights Gender-Based Violence (GBV) in South Africa using tech 
+                            and community support. Its launch was attended by key figures and covered by 
+                            national media.
+                        </p>
+                        <a href="/case-studies/eyerus" class="text-decoration-none">
+                            View More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Case Study 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <span class="badge bg-success">Artificial Intelligence</span>
+                            <span class="text-muted small">July 12, 2022</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-3">i-Dent-Ify</h3>
+                        <p class="text-muted mb-4">
+                            i-DENT-ify and Tcheck collaborated on an AI app for car damage detection. 
+                            It uses advanced AI model trained on 100+ cars to accurately identify and 
+                            assess damage.
+                        </p>
+                        <a href="/case-studies/i-dent-ify" class="text-decoration-none">
+                            View More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h2 class="display-5 fw-bold mb-4">Ready to Build Your Next App?</h2>
+        <p class="lead mb-5">Get a free quote and consultation for your AI or mobile app project.</p>
+        <a href="/free-quote" class="btn btn-warning btn-lg px-5 py-3 fw-bold">
+            <i class="fas fa-comment-dollar me-2"></i>Get Free Quote
+            <i class="fas fa-arrow-up-right-from-square ms-2"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Custom Styles -->
+<style>
+
+    .hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: imageFade 20s infinite linear;
+}
+
+/* Delay for each image (Total 20s cycle / 4 images = 5s each) */
+.hero-bg:nth-child(1) { animation-delay: 0s; }
+.hero-bg:nth-child(2) { animation-delay: 5s; }
+.hero-bg:nth-child(3) { animation-delay: 10s; }
+.hero-bg:nth-child(4) { animation-delay: 15s; }
+
+@@keyframes imageFade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    25% { opacity: 1; }
+    30% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.z-2 { z-index: 2; }
+
+
+
+    .hero-section {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #1a237e 0%, #311b92 100%);
+    }
+
+    .bg-pattern {
+        background-image: 
+            radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+            radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
+        background-size: 50px 50px;
+    }
+
+    .min-vh-85 {
+        min-height: 85vh;
+    }
+
+    .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .client-logo {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+        .client-logo:hover {
+            transform: scale(1.05);
+        }
+
+    .rating i {
+        margin: 0 2px;
+    }
+
+    .bg-white\/10 {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .backdrop-blur {
+        backdrop-filter: blur(10px);
+    }
+</style>
+
+<!-- Animation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add animation to cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card').forEach(card => {
+            observer.observe(card);
+        });
+    });
+</script>
