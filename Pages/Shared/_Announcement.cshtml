@@ -1,0 +1,20 @@
+﻿<!-- Pages/Shared/_Announcement.cshtml -->
+<div class="announcement-bar bg-primary text-white py-2 overflow-hidden">
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span class="badge bg-warning me-3">🎉 NEW</span>
+            Proud to announce that we are Gauteng’s leading software development company — delivering innovation, reliability, and results. Building Scalability.
+            <span class="ms-3">•</span>
+            <span class="badge bg-warning me-3">🎉 NEW</span>
+            Proud to announce that we are Gauteng’s leading software development company — delivering innovation, reliability, and results. Building Scalability.
+        </div>
+    </div>
+</div>
+
+<style>
+    .announcement-bar { position: relative; z-index: 1000; }
+    .marquee-container { overflow: hidden; white-space: nowrap; }
+    .marquee-content { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite; }
+    @@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+    .marquee-container:hover .marquee-content { animation-play-state: paused; }
+</style>

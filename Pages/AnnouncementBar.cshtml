@@ -1,0 +1,143 @@
+﻿@page
+@model macfish.Pages.AnnouncementBarModel
+@{
+}
+
+<div class="announcement-banner">
+    <div class="banner-content">
+        <div class="banner-icon">
+            <i class="fas fa-bullhorn"></i>
+        </div>
+        <div class="banner-text">
+            <span class="banner-title">ANNOUNCEMENT</span>
+            <span class="banner-message">
+                Proud to announce that we are <strong>Gauteng's leading software development company</strong> — delivering innovation, reliability, and results. <em class="text-warning">Building Scalability.</em>
+            </span>
+        </div>
+        <button class="banner-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+</div>
+
+<style>
+    .announcement-banner {
+        background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+        color: white;
+        padding: 15px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .announcement-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient( 45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.1) 10px, rgba(255, 255, 255, 0.1) 20px );
+            pointer-events: none;
+        }
+
+    .banner-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .banner-icon {
+        margin-right: 15px;
+        font-size: 1.5rem;
+        animation: pulse 2s infinite;
+    }
+
+    .banner-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .banner-title {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .banner-message {
+        font-size: 1rem;
+    }
+
+    .banner-close {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 20px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+    }
+
+        .banner-close:hover {
+            opacity: 1;
+        }
+
+    @@keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .banner-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .banner-icon {
+            margin-right: 0;
+        }
+
+        .banner-close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const closeBtn = document.querySelector('.banner-close');
+        const banner = document.querySelector('.announcement-banner');
+
+        closeBtn.addEventListener('click', function() {
+            banner.style.display = 'none';
+            localStorage.setItem('bannerClosed', 'true');
+        });
+
+        if (localStorage.getItem('bannerClosed') === 'true') {
+            banner.style.display = 'none';
+        }
+    });
+</script>
