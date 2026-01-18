@@ -4,10 +4,18 @@
     ViewData["Title"] = "About Us - Macfish Digital Solutions";
 }
 
-<!-- Hero Section -->
-<section class="hero-section position-relative bg-gradient-primary">
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
-    <div class="container position-relative z-1 py-5">
+<section class="hero-section position-relative overflow-hidden">
+    <!-- Background Carousel -->
+    <div class="hero-bg-carousel">
+        <div class="hero-bg" style="background-image:url('/images/banners/meeting.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/board.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/b.jpg');"></div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-60" style="z-index: 1;"></div>
+
+    <div class="container position-relative py-5" style="z-index: 2;">
         <div class="row align-items-center min-vh-50">
             <div class="col-lg-8 mx-auto text-center text-white">
                 <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
@@ -17,14 +25,13 @@
                     <span class="badge bg-warning">#Passionate</span>
                 </div>
                 <h1 class="display-3 fw-bold mb-4">The Minds Behind Macfish Digital Solutions</h1>
-                <p class="lead mb-5">
-                    We are a team of mostly South African designers, developers, scrum masters,
-                    testers, and managers who are passionate about what we do.
-                </p>
+                <p class="lead mb-5">We are a team of mostly South African designers, developers, and managers passionate about what we do.</p>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- Add marquee here -->
 <partial name="_Announcement" />

@@ -4,10 +4,18 @@
     ViewData["Title"] = "Pricing - Macfish Digital Solutions";
 }
 
-<!-- Hero Section with Background Image -->
-<section class="hero-section position-relative" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-60"></div>
-    <div class="container position-relative z-1 py-5">
+<section class="hero-section position-relative overflow-hidden">
+    <!-- Background Carousel -->
+    <div class="hero-bg-carousel">
+        <div class="hero-bg" style="background-image:url('/images/banners/meeting.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/board.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/b.jpg');"></div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-60" style="z-index: 1;"></div>
+
+    <div class="container position-relative py-5" style="z-index: 2;">
         <div class="row align-items-center min-vh-50">
             <div class="col-lg-8 mx-auto text-center text-white">
                 <div class="d-flex flex-wrap gap-2 justify-content-center mb-4">
@@ -16,17 +24,13 @@
                     <span class="badge bg-success">#FixedQuotes</span>
                 </div>
                 <h1 class="display-3 fw-bold mb-4">Pricing for Common Apps</h1>
-                <p class="lead mb-5">
-                    Transparent pricing for common app types. All quotes in South African Rands.
-                    <br>Contact: 069 262 9422
-                </p>
-                <a href="#pricing" class="btn btn-warning btn-lg px-5 py-3 fw-bold">
-                    <i class="fas fa-arrow-down me-2"></i>View Pricing
-                </a>
+                <p class="lead mb-5">Transparent pricing for common app types. All quotes in South African Rands.</p>
+                <a href="#pricing" class="btn btn-warning btn-lg px-5 py-3 fw-bold"><i class="fas fa-arrow-down me-2"></i>View Pricing</a>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Add marquee here -->
 <partial name="_Announcement" />

@@ -4,29 +4,31 @@
     ViewData["Title"] = "Contact Us - Macfish Digital Solutions";
 }
 
-<!-- Hero Section -->
-<section class="hero-section position-relative bg-gradient-primary">
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
-    <div class="container position-relative z-1 py-5">
+<section class="hero-section position-relative overflow-hidden">
+    <!-- Background Carousel -->
+    <div class="hero-bg-carousel">
+        <div class="hero-bg" style="background-image:url('/images/banners/meeting.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/board.jpg');"></div>
+        <div class="hero-bg" style="background-image:url('/images/banners/b.jpg');"></div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-60" style="z-index: 1;"></div>
+
+    <div class="container position-relative py-5" style="z-index: 2;">
         <div class="row align-items-center min-vh-50">
             <div class="col-lg-8 mx-auto text-center text-white">
                 <h1 class="display-3 fw-bold mb-4">Let's Build Something Amazing</h1>
-                <p class="lead mb-5">
-                    Get in touch with us to discuss your project. We're ready to help bring
-                    your vision to life.
-                </p>
+                <p class="lead mb-5">Get in touch with us to discuss your project. We're ready to help bring your vision to life.</p>
                 <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="tel:+27662199118" class="btn btn-warning btn-lg">
-                        <i class="fas fa-phone me-2"></i>+27 (0) 69 262 9422
-                    </a>
-                    <a href="mailto:support@macfish.co.za" class="btn btn-outline-light btn-lg">
-                        <i class="fas fa-envelope me-2"></i>support@macfish.co.za
-                    </a>
+                    <a href="tel:+27692629422" class="btn btn-warning btn-lg"><i class="fas fa-phone me-2"></i>+27 (0) 69 262 9422</a>
+                    <a href="mailto:support@macfish.co.za" class="btn btn-outline-light btn-lg"><i class="fas fa-envelope me-2"></i>support@macfish.co.za</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Add marquee here -->
 <partial name="_Announcement" />
@@ -251,6 +253,8 @@
         </div>
     </div>
 </section>
+
+<style></style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
