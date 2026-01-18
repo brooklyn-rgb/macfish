@@ -1,5 +1,5 @@
 ﻿@page
-@model macfish.Pages.WorkEthicsModel
+@model WorkEthicsModel
 @{
     ViewData["Title"] = "Our Work Ethics & Process - Macfish Digital Solutions";
     ViewData["Description"] = "Learn about our professional work ethics, transparent billing practices, and collaborative approach to software development.";
@@ -8,29 +8,45 @@
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-10 mx-auto">
-            <!-- Page Header -->
-            <div class="text-center mb-5">
-                <h1 class="display-4 fw-bold mb-3">Our Work Ethics & Process</h1>
-                <p class="lead text-muted">
-                    Building trust through transparency, communication, and professional excellence.
-                </p>
+            <!-- Hero Header with Image -->
+            <div class="text-center mb-5 position-relative overflow-hidden rounded-3">
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                     style="background: linear-gradient(rgba(13, 110, 253, 0.85), rgba(13, 110, 253, 0.9)),
+                            url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
+                            center/cover no-repeat;">
+                </div>
+                <div class="position-relative py-5 px-4">
+                    <h1 class="display-4 fw-bold mb-3 text-white">Our Work Ethics & Process</h1>
+                    <p class="lead text-white mb-0">
+                        Building trust through transparency, communication, and professional excellence.
+                    </p>
+                </div>
             </div>
 
-            <!-- Introduction -->
-            <div class="card border-0 shadow-sm mb-5">
-                <div class="card-body p-5">
-                    <div class="d-flex align-items-start mb-4">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3">
-                            <i class="fas fa-handshake fa-2x"></i>
+            <!-- Introduction with Image -->
+            <div class="card border-0 shadow-sm overflow-hidden mb-5">
+                <div class="row g-0">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5">
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                    <i class="fas fa-handshake fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h2 class="h4 fw-bold mb-2">A Partnership Built on Trust</h2>
+                                    <p class="text-muted mb-0">
+                                        At Macfish Digital Solutions, we believe that successful projects are built on clear
+                                        communication, mutual respect, and transparent processes.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <h2 class="h4 fw-bold mb-2">A Partnership Built on Trust</h2>
-                            <p class="text-muted mb-0">
-                                At Macfish Digital Solutions, we believe that successful projects are built on clear 
-                                communication, mutual respect, and transparent processes. Our work ethics are designed 
-                                to create seamless collaboration and exceptional results.
-                            </p>
-                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab286?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="Team collaboration meeting"
+                             style="min-height: 250px;">
                     </div>
                 </div>
             </div>
@@ -39,10 +55,12 @@
             <div class="row mb-5">
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top overflow-hidden" style="height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                 class="img-fluid w-100 h-100 object-fit-cover"
+                                 alt="Team communication">
+                        </div>
                         <div class="card-body p-4 text-center">
-                            <div class="mb-4">
-                                <i class="fas fa-comments text-primary fa-3x"></i>
-                            </div>
                             <h3 class="h5 fw-bold mb-3">Clear Communication</h3>
                             <p class="text-muted">
                                 We maintain open channels for regular updates and feedback throughout every project phase.
@@ -52,10 +70,12 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top overflow-hidden" style="height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                 class="img-fluid w-100 h-100 object-fit-cover"
+                                 alt="Data analysis and transparency">
+                        </div>
                         <div class="card-body p-4 text-center">
-                            <div class="mb-4">
-                                <i class="fas fa-chart-line text-success fa-3x"></i>
-                            </div>
                             <h3 class="h5 fw-bold mb-3">Transparent Process</h3>
                             <p class="text-muted">
                                 Every step of our workflow is visible and understandable to ensure complete alignment.
@@ -65,10 +85,12 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card border-0 shadow-sm h-100">
+                        <div class="card-img-top overflow-hidden" style="height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1506784926709-22f1ec395907?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                 class="img-fluid w-100 h-100 object-fit-cover"
+                                 alt="Time management and efficiency">
+                        </div>
                         <div class="card-body p-4 text-center">
-                            <div class="mb-4">
-                                <i class="fas fa-clock text-warning fa-3x"></i>
-                            </div>
                             <h3 class="h5 fw-bold mb-3">Respect for Time</h3>
                             <p class="text-muted">
                                 We value your time and ours, with efficient processes and timely project delivery.
@@ -79,96 +101,107 @@
             </div>
 
             <!-- Billing & Engagement Models -->
-            <div class="card border-0 shadow-lg mb-5">
-                <div class="card-header bg-primary text-white py-4">
-                    <h2 class="h4 fw-bold mb-0">
-                        <i class="fas fa-file-invoice-dollar me-3"></i>Transparent Billing & Engagement Models
-                    </h2>
-                </div>
-                <div class="card-body p-5">
-                    <p class="lead mb-4">
-                        We offer flexible engagement models designed to provide the best value and efficiency for your specific needs.
-                    </p>
-
-                    <!-- Hourly Model -->
-                    <div class="row align-items-center mb-5">
-                        <div class="col-md-3 text-center mb-3 mb-md-0">
-                            <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                                <i class="fas fa-hourglass-half text-primary fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <h3 class="h5 fw-bold mb-3">Hourly Engagement Model</h3>
-                            <p class="text-muted mb-3">
-                                <strong>Perfect for:</strong> Specific tasks, short-term projects, or when scope is clearly defined.
-                            </p>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Billed per hour for actual time spent on your project
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Detailed time tracking with transparent reporting
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Complete control over project scope and budget
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Ideal for projects with clear, defined requirements
-                                </li>
-                            </ul>
-                            <div class="alert alert-light border mt-4" role="alert">
-                                <i class="fas fa-lightbulb text-warning me-2"></i>
-                                <strong>Recommendation:</strong> For this model, we kindly suggest communicating amendment comments 
-                                promptly to help us manage scope efficiently and avoid any unexpected additional costs.
-                            </div>
-                        </div>
+            <div class="card border-0 shadow-lg mb-5 overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="Financial transparency and billing"
+                             style="min-height: 300px;">
                     </div>
-
-                    <hr class="my-5">
-
-                    <!-- Monthly Model -->
-                    <div class="row align-items-center">
-                        <div class="col-md-3 text-center mb-3 mb-md-0">
-                            <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                                <i class="fas fa-calendar-check text-success fa-3x"></i>
-                            </div>
+                    <div class="col-lg-8">
+                        <div class="card-header bg-primary text-white py-4">
+                            <h2 class="h4 fw-bold mb-0">
+                                <i class="fas fa-file-invoice-dollar me-3"></i>Transparent Billing & Engagement Models
+                            </h2>
                         </div>
-                        <div class="col-md-9">
-                            <h3 class="h5 fw-bold mb-3">Monthly Retainer Model</h3>
-                            <p class="text-muted mb-3">
-                                <strong>Perfect for:</strong> Ongoing development, continuous improvement, and strategic partnerships.
+                        <div class="card-body p-4 p-lg-5">
+                            <p class="lead mb-4">
+                                We offer flexible engagement models designed to provide the best value and efficiency for your specific needs.
                             </p>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Fixed monthly fee for dedicated development resources
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Priority access to our development team
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Streamlined communication and faster response times
-                                </li>
-                                <li class="mb-2">
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Continuous improvement and proactive maintenance
-                                </li>
-                                <li>
-                                    <i class="fas fa-check-circle text-success me-2"></i>
-                                    Better predictability and simplified budgeting
-                                </li>
-                            </ul>
-                            <div class="alert alert-success border mt-4" role="alert">
-                                <i class="fas fa-star me-2"></i>
-                                <strong>Recommended for Optimal Collaboration:</strong> This model ensures seamless, 
-                                continuous operations and more effective service delivery. It's designed for clients 
-                                seeking an ongoing partnership with prioritized attention and streamlined processes.
+
+                            <!-- Hourly Model -->
+                            <div class="row align-items-center mb-5">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                         class="img-fluid rounded-circle shadow-sm"
+                                         alt="Hourglass time tracking"
+                                         style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h5 fw-bold mb-3">Hourly Engagement Model</h3>
+                                    <p class="text-muted mb-3">
+                                        <strong>Perfect for:</strong> Specific tasks, short-term projects, or when scope is clearly defined.
+                                    </p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Billed per hour for actual time spent on your project
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Detailed time tracking with transparent reporting
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Complete control over project scope and budget
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Ideal for projects with clear, defined requirements
+                                        </li>
+                                    </ul>
+                                    <div class="alert alert-light border mt-4" role="alert">
+                                        <i class="fas fa-lightbulb text-warning me-2"></i>
+                                        <strong>Recommendation:</strong> For this model, we kindly suggest communicating amendment comments
+                                        promptly to help us manage scope efficiently.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-5">
+
+                            <!-- Monthly Model -->
+                            <div class="row align-items-center">
+                                <div class="col-md-3 text-center mb-3 mb-md-0">
+                                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                         class="img-fluid rounded-circle shadow-sm"
+                                         alt="Calendar and planning"
+                                         style="width: 120px; height: 120px; object-fit: cover;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3 class="h5 fw-bold mb-3">Monthly Retainer Model</h3>
+                                    <p class="text-muted mb-3">
+                                        <strong>Perfect for:</strong> Ongoing development, continuous improvement, and strategic partnerships.
+                                    </p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Fixed monthly fee for dedicated development resources
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Priority access to our development team
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Streamlined communication and faster response times
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Continuous improvement and proactive maintenance
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            Better predictability and simplified budgeting
+                                        </li>
+                                    </ul>
+                                    <div class="alert alert-success border mt-4" role="alert">
+                                        <i class="fas fa-star me-2"></i>
+                                        <strong>Recommended for Optimal Collaboration:</strong> This model ensures seamless,
+                                        continuous operations and more effective service delivery.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -182,57 +215,67 @@
                     @{
                         var processSteps = new[]
                         {
-                            new { 
-                                number = "01", 
-                                title = "Discovery & Planning", 
-                                icon = "fas fa-search",
-                                description = "We begin by thoroughly understanding your requirements, goals, and constraints to create a detailed project plan."
-                            },
-                            new { 
-                                number = "02", 
-                                title = "Regular Communication", 
-                                icon = "fas fa-comment-dots",
-                                description = "Weekly check-ins, progress reports, and open channels ensure we're always aligned and can address questions promptly."
-                            },
-                            new { 
-                                number = "03", 
-                                title = "Transparent Development", 
-                                icon = "fas fa-code",
-                                description = "You'll have visibility into our development process with regular demos and opportunities for feedback at every stage."
-                            },
-                            new { 
-                                number = "04", 
-                                title = "Quality Assurance", 
-                                icon = "fas fa-check-double",
-                                description = "Rigorous testing and quality checks ensure we deliver robust, reliable solutions that meet your expectations."
-                            },
-                            new { 
-                                number = "05", 
-                                title = "Timely Delivery", 
-                                icon = "fas fa-clock",
-                                description = "We respect deadlines and provide clear timelines, keeping you informed of progress and any necessary adjustments."
-                            },
-                            new { 
-                                number = "06", 
-                                title = "Ongoing Support", 
-                                icon = "fas fa-hands-helping",
-                                description = "Our relationship continues post-launch with maintenance, updates, and support to ensure long-term success."
-                            }
-                        };
+                                        new {
+                                        number = "01",
+                                        title = "Discovery & Planning",
+                                        icon = "fas fa-search",
+                                        image = "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                                        description = "We begin by thoroughly understanding your requirements, goals, and constraints to create a detailed project plan."
+                                        },
+                                        new {
+                                        number = "02",
+                                        title = "Regular Communication",
+                                        icon = "fas fa-comment-dots",
+                                        image = "https://images.unsplash.com/photo-1573164713714-d95e436ab286?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                                        description = "Weekly check-ins, progress reports, and open channels ensure we're always aligned."
+                                        },
+                                        new {
+                                        number = "03",
+                                        title = "Transparent Development",
+                                        icon = "fas fa-code",
+                                        image = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                                        description = "You'll have visibility into our development process with regular demos and feedback opportunities."
+                                        },
+                                        new {
+                                        number = "04",
+                                        title = "Quality Assurance",
+                                        icon = "fas fa-check-double",
+                                        image = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                                        description = "Rigorous testing and quality checks ensure we deliver robust, reliable solutions."
+                                        },
+                                        new {
+                                        number = "05",
+                                        title = "Timely Delivery",
+                                        icon = "fas fa-clock",
+                                        image = "https://images.unsplash.com/photo-1506784926709-22f1ec395907?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                                        description = "We respect deadlines and provide clear timelines, keeping you informed of progress."
+                                        },
+                                        new {
+                                        number = "06",
+                                        title = "Ongoing Support",
+                                        icon = "fas fa-hands-helping",
+                                        image = "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                                        description = "Our relationship continues post-launch with maintenance, updates, and support."
+                                        }
+                                        };
                     }
 
                     @foreach (var step in processSteps)
                     {
                         <div class="col-md-6 col-lg-4 mb-4">
                             <div class="card border-0 shadow-sm h-100">
+                                <div class="position-relative">
+                                    <img src="@step.image"
+                                         class="card-img-top"
+                                         alt="@step.title"
+                                         style="height: 180px; object-fit: cover;">
+                                    <span class="position-absolute top-0 start-0 bg-primary text-white rounded-circle m-3"
+                                          style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                        @step.number
+                                    </span>
+                                </div>
                                 <div class="card-body p-4">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <span class="badge bg-primary rounded-circle p-2 me-3" style="width: 40px; height: 40px; line-height: 26px;">@step.number</span>
-                                        <h3 class="h5 fw-bold mb-0">@step.title</h3>
-                                    </div>
-                                    <div class="text-center mb-3">
-                                        <i class="@step.icon text-primary fa-2x"></i>
-                                    </div>
+                                    <h3 class="h5 fw-bold mb-2">@step.title</h3>
                                     <p class="text-muted mb-0">@step.description</p>
                                 </div>
                             </div>
@@ -242,84 +285,100 @@
             </div>
 
             <!-- Communication Best Practices -->
-            <div class="card border-0 shadow-sm mb-5 bg-light">
-                <div class="card-body p-5">
-                    <h2 class="h3 fw-bold mb-4">
-                        <i class="fas fa-headset me-3 text-primary"></i>Communication Best Practices
-                    </h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
+            <div class="card border-0 shadow-sm mb-5 bg-light overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="https://images.unsplash.com/photo-1551836026-d5c2e0c49b61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="Team communication and collaboration"
+                             style="min-height: 300px;">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body p-4 p-lg-5">
+                            <h2 class="h3 fw-bold mb-4">
+                                <i class="fas fa-headset me-3 text-primary"></i>Communication Best Practices
+                            </h2>
+
                             <div class="d-flex mb-4">
                                 <i class="fas fa-bell text-success fa-2x me-3 mt-1"></i>
                                 <div>
                                     <h4 class="h5 fw-bold mb-2">Prompt Communication</h4>
                                     <p class="text-muted mb-0">
-                                        To ensure efficient workflow and avoid scope creep, we recommend communicating 
-                                        feedback and amendment requests as they arise. This helps us address them 
-                                        immediately and maintain project momentum.
+                                        To ensure efficient workflow and avoid scope creep, we recommend communicating
+                                        feedback and amendment requests as they arise.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="col-md-6">
+
                             <div class="d-flex mb-4">
                                 <i class="fas fa-calendar-alt text-primary fa-2x me-3 mt-1"></i>
                                 <div>
                                     <h4 class="h5 fw-bold mb-2">Scheduled Reviews</h4>
                                     <p class="text-muted mb-0">
-                                        We schedule regular review sessions to discuss progress, gather feedback, 
-                                        and make adjustments. This structured approach prevents last-minute changes 
-                                        and ensures smooth project progression.
+                                        We schedule regular review sessions to discuss progress, gather feedback,
+                                        and make adjustments.
                                     </p>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info border-0 mt-4" role="alert">
+                                <div class="d-flex">
+                                    <i class="fas fa-info-circle fa-2x me-3 mt-1"></i>
+                                    <div>
+                                        <h5 class="alert-heading fw-bold mb-2">Our Commitment to Clarity</h5>
+                                        <p class="mb-0">
+                                            We understand that clear communication is essential for successful collaboration.
+                                            If there has been any previous confusion regarding our processes or billing, we sincerely
+                                            apologize.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="alert alert-info border-0 mt-4" role="alert">
-                        <div class="d-flex">
-                            <i class="fas fa-info-circle fa-2x me-3 mt-1"></i>
-                            <div>
-                                <h5 class="alert-heading fw-bold mb-2">Our Commitment to Clarity</h5>
-                                <p class="mb-0">
-                                    We understand that clear communication is essential for successful collaboration. 
-                                    If there has been any previous confusion regarding our processes or billing, we sincerely 
-                                    apologize. Our goal is to ensure complete transparency and alignment from the very beginning.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+
+            <!-- Call to Action with Background Image -->
+            <div class="text-center mb-5 position-relative overflow-hidden rounded-3 py-5 px-4">
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                     style="background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.95)),
+                            url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
+                            center/cover no-repeat;">
+                </div>
+                <div class="position-relative">
+                    <h2 class="h3 fw-bold mb-4 text-white">Ready to Start Your Project?</h2>
+                    <p class="lead mb-4 text-white">
+                        Let's discuss how we can work together to bring your vision to life with clarity and confidence.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/free-quote" class="btn btn-light btn-lg px-5 fw-bold">
+                            <i class="fas fa-comment-dollar me-2"></i>Get a Free Quote
+                        </a>
+                        <a href="/contact" class="btn btn-outline-light btn-lg px-5">
+                            <i class="fas fa-phone me-2"></i>Contact Us
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Call to Action -->
-            <div class="text-center mb-5">
-                <h2 class="h3 fw-bold mb-4">Ready to Start Your Project?</h2>
-                <p class="lead mb-4">
-                    Let's discuss how we can work together to bring your vision to life with clarity and confidence.
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <a href="/free-quote" class="btn btn-primary btn-lg px-5">
-                        <i class="fas fa-comment-dollar me-2"></i>Get a Free Quote
-                    </a>
-                    <a href="/contact" class="btn btn-outline-primary btn-lg px-5">
-                        <i class="fas fa-phone me-2"></i>Contact Us
-                    </a>
-                </div>
-            </div>
-
             <!-- FAQ Section -->
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-dark text-white py-4">
-                    <h2 class="h4 fw-bold mb-0">
-                        <i class="fas fa-question-circle me-3"></i>Frequently Asked Questions
-                    </h2>
+            <div class="card border-0 shadow-sm overflow-hidden">
+                <div class="card-header bg-dark text-white py-4 position-relative">
+                    <div class="position-absolute top-0 end-0 h-100 w-50 opacity-25">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                             class="img-fluid h-100 w-100 object-fit-cover"
+                             alt="FAQ background">
+                    </div>
+                    <div class="position-relative">
+                        <h2 class="h4 fw-bold mb-0">
+                            <i class="fas fa-question-circle me-3"></i>Frequently Asked Questions
+                        </h2>
+                    </div>
                 </div>
                 <div class="card-body p-4">
                     <div class="accordion" id="workEthicsFAQ">
-                        <!-- FAQ 1 -->
+                        <!-- FAQ Items (same as before) -->
                         <div class="accordion-item border-0 mb-3">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
@@ -328,14 +387,12 @@
                             </h3>
                             <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#workEthicsFAQ">
                                 <div class="accordion-body">
-                                    The monthly retainer model provides priority access to our team, faster response times, 
-                                    and continuous development without the need to track individual hours. It's ideal for 
-                                    ongoing projects where you want a dedicated development partner focused on your long-term success.
+                                    The monthly retainer model provides priority access to our team, faster response times,
+                                    and continuous development without the need to track individual hours.
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- FAQ 2 -->
+
                         <div class="accordion-item border-0 mb-3">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
@@ -344,14 +401,12 @@
                             </h3>
                             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#workEthicsFAQ">
                                 <div class="accordion-body">
-                                    We use professional time-tracking software that provides detailed reports of how time is spent 
-                                    on your project. You'll receive regular updates and can review time logs to ensure complete 
-                                    transparency and alignment with project goals.
+                                    We use professional time-tracking software that provides detailed reports of how time is spent
+                                    on your project with complete transparency.
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- FAQ 3 -->
+
                         <div class="accordion-item border-0">
                             <h3 class="accordion-header">
                                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
@@ -360,10 +415,8 @@
                             </h3>
                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#workEthicsFAQ">
                                 <div class="accordion-body">
-                                    Yes, we're flexible and can adjust our engagement model as your needs evolve. Many clients 
-                                    start with hourly billing for initial development and switch to a monthly retainer for 
-                                    ongoing maintenance and enhancements. We'll work with you to determine the best approach 
-                                    at each project phase.
+                                    Yes, we're flexible and can adjust our engagement model as your needs evolve. Many clients
+                                    start with hourly billing and switch to a monthly retainer for ongoing maintenance.
                                 </div>
                             </div>
                         </div>
@@ -374,7 +427,7 @@
             <!-- Contact Information -->
             <div class="text-center mt-5">
                 <p class="text-muted">
-                    <i class="fas fa-envelope me-2"></i>For specific questions about our work ethics: 
+                    <i class="fas fa-envelope me-2"></i>For specific questions about our work ethics:
                     <a href="mailto:info@macfish.co.za" class="text-decoration-none">info@macfish.co.za</a>
                 </p>
                 <p class="small text-muted">
@@ -387,38 +440,38 @@
 
 <!-- Schema Markup for SEO -->
 <script type="application/ld+json">
-{
-  "@@context": "https://schema.org",
-  "@@type": "WebPage",
-  "name": "Work Ethics & Process - Macfish Digital Solutions",
-  "description": "Professional work ethics, transparent billing practices, and collaborative approach to software development.",
-  "publisher": {
-    "@@type": "Organization",
-    "name": "Macfish Digital Solutions",
-    "url": "https://macfish.co.za"
-  },
-  "mainEntity": {
-    "@@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@@type": "Question",
-        "name": "What's the advantage of the monthly retainer model?",
-        "acceptedAnswer": {
-          "@@type": "Answer",
-          "text": "The monthly retainer model provides priority access to our team, faster response times, and continuous development without the need to track individual hours."
-        }
+    {
+      "@@context": "https://schema.org",
+      "@@type": "WebPage",
+      "name": "Work Ethics & Process - Macfish Digital Solutions",
+      "description": "Professional work ethics, transparent billing practices, and collaborative approach to software development.",
+      "publisher": {
+        "@@type": "Organization",
+        "name": "Macfish Digital Solutions",
+        "url": "https://macfish.co.za"
       },
-      {
-        "@@type": "Question",
-        "name": "How do you track hours in the hourly model?",
-        "acceptedAnswer": {
-          "@@type": "Answer",
-          "text": "We use professional time-tracking software that provides detailed reports of how time is spent on your project with complete transparency."
-        }
+      "mainEntity": {
+        "@@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@@type": "Question",
+            "name": "What's the advantage of the monthly retainer model?",
+            "acceptedAnswer": {
+              "@@type": "Answer",
+              "text": "The monthly retainer model provides priority access to our team, faster response times, and continuous development without the need to track individual hours."
+            }
+          },
+          {
+            "@@type": "Question",
+            "name": "How do you track hours in the hourly model?",
+            "acceptedAnswer": {
+              "@@type": "Answer",
+              "text": "We use professional time-tracking software that provides detailed reports of how time is spent on your project with complete transparency."
+            }
+          }
+        ]
       }
-    ]
-  }
-}
+    }
 </script>
 
 <style>
@@ -427,21 +480,38 @@
         color: #0d6efd;
         box-shadow: none;
     }
-    
+
     .accordion-button:focus {
         box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
         border-color: #0d6efd;
     }
-    
+
     .card {
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
-    .card:hover {
-        transform: translateY(-5px);
-    }
-    
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+
     hr {
         opacity: 0.1;
+    }
+
+    .object-fit-cover {
+        object-fit: cover;
+    }
+
+    .img-fluid {
+        transition: transform 0.5s ease;
+    }
+
+    .card:hover .img-fluid {
+        transform: scale(1.05);
+    }
+
+    .position-relative {
+        overflow: hidden;
     }
 </style>
