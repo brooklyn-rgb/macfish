@@ -118,68 +118,48 @@
             </div>
         </div>
 
-        <div class="row g-4">
-            <!-- CEO -->
-            <div class="col-md-6">
-                <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-5 text-center mb-3 mb-md-0">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                                     class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                                <h5 class="fw-bold mb-0">Rob Maclean</h5>
-                                <p class="text-muted small">CEO & Founder</p>
-                            </div>
-                            <div class="col-md-7">
-                                <h4 class="h5 fw-bold mb-3">Experienced Business Leadership That Delivers</h4>
-                                <p class="text-muted mb-3">
-                                    Rob graduated with a Masters from Oxford University and spent 15 years
-                                    in Financial Services before setting up Macfish. We have our own portfolio
-                                    of successful apps, so we understand the importance of cost management,
-                                    quality and meeting deadlines to our clients.
-                                </p>
-                                <div class="d-flex gap-3">
-                                    <a href="#" class="text-primary"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-primary"><i class="fab fa-twitter"></i></a>
+        <div class="row g-4 justify-content-center">
+            <!-- CEO Card (Col-lg-6 makes it 2-column on desktop) -->
+            <div class="col-12 col-lg-6">
+                <div class="card border-0 shadow-lg h-100 overflow-hidden">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row align-items-start">
+                            <!-- Image Section: Centered on mobile, Left on desktop -->
+                            <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                                <img src="~/images/ceo2.png" 
+                                     class="img-fluid rounded-circle shadow-sm border border-3 border-white mb-3" 
+                                     alt="Michael M"
+                                     style="width: 140px; height: 140px; object-fit: cover;">
+                                <h5 class="fw-bold mb-0">Michael M</h5>
+                                <p class="text-warning fw-semibold small text-uppercase"></p>
+                                
+                                <div class="d-flex justify-content-center gap-3 mt-2">
+                                    <a href="#" class="text-primary fs-5"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#" class="text-info fs-5"><i class="bi bi-twitter-x"></i></a>
                                 </div>
+                            </div>
+
+                            <!-- Content Section -->
+                            <div class="col-12 col-md-8">
+                                <h4 class="h5 fw-bold mb-3 text-dark">Software Tech Leadership That Delivers</h4>
+                                <p class="text-muted mb-0" style="font-size: 0.95rem; line-height: 1.6;">
+                                    Michael holds a BA in Computer Science from Makerere University and brings over 8 years of hands-on experience in software development. At Macfish, we leverage our own portfolio of successful apps to ensure we manage costs effectively and consistently meet deadlines for our clients.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CTO -->
-            <div class="col-md-6">
-                <div class="card border-0 shadow-lg h-100">
-                    <div class="card-body p-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-5 text-center mb-3 mb-md-0">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                                     class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-                                <h5 class="fw-bold mb-0">James Wilson</h5>
-                                <p class="text-muted small">CTO & Lead Developer</p>
-                            </div>
-                            <div class="col-md-7">
-                                <h4 class="h5 fw-bold mb-3">Technology Visionary</h4>
-                                <p class="text-muted mb-3">
-                                    With 12+ years in software development, James leads our technical team
-                                    and ensures we stay at the forefront of technology while maintaining
-                                    robust, scalable solutions.
-                                </p>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
-                                    <span class="badge bg-primary">Flutter</span>
-                                    <span class="badge bg-info">AI/ML</span>
-                                    <span class="badge bg-success">AWS</span>
-                                </div>
-                                <div class="d-flex gap-3">
-                                    <a href="#" class="text-primary"><i class="fab fa-linkedin"></i></a>
-                                    <a href="#" class="text-primary"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Placeholder for 2nd Leader (Optional - Duplicate the block above) -->
+            <div class="col-12 col-lg-6">
+                <div class="card border-0 shadow-lg h-100 bg-white">
+                    <div class="card-body p-4 p-md-5 d-flex align-items-center justify-content-center text-center border-dashed border-2 rounded">
+                        <p class="text-muted mb-0">CEO & Founder</p>
                     </div>
                 </div>
             </div>
+       
         </div>
     </div>
 </section>
